@@ -1,0 +1,135 @@
+@charset "ISO-8859-1";
+body{
+padding-left:20px;
+background-color:hsl(60,77%,95%);
+font-family: sans-serif;
+font-size: .9em;
+}
+
+body h2{
+	text-align: center;
+	margin-bottom: 30px;
+	margin-top: 30px;
+}
+
+img#Logo{/*se usa en los img cuyo id sea logo, cuando se usa numeral es para emparejar con los id*/
+	height: 50px;
+	position: absolute; /*define la posicion creando su propio layout*/
+}
+
+div.divTest { /*se usa cuando las class es divTetst*/
+	border: 3px solid gray;
+	margin-top: 4px;
+	padding-left: 20px;
+	width: 500px;
+	height: 210px;
+	display: inline-block;
+	 vertical-align: top; 
+	background-color: white;
+}
+
+div#idDivNarticulos {
+	background-color: hsl(60,99%,60%);
+	height: 100px;
+}
+
+div#idDivNarticulos h3.status {
+	text-align: center;
+}
+
+div#idDivNarticulos h3.status span#nArticulos{
+	color: hsl(15,100%,40%);
+}
+div#idDivAltarticulos label {
+	display: inline-block;
+}
+
+div#idDivConsultaArticulos  {
+	background-color: hsl(50,99%,60%);
+}
+
+div#idDivConsultaArticulos textarea {
+	 color: hsl(220,90%,30%);
+}
+
+div#idDivAltaArticulos {
+	background-color: hsl(5,99%,95%);
+}
+div#idDivAltaArticulos label{
+	display: inline-block;
+	width: 80px;
+}
+
+}
+div#idDivAltaArticulos input[type="button"], div#idDivAltaArticulos input[type="reset"] {
+	margin-top: 4px;
+	width: 80px;
+}
+
+div#idDivAltaArticulos input[type="button"] {
+	background-color: hsl(224,100%,40%);
+	color: white;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+div#idDivAltaArticulos h4{
+	margin-top: 5px;
+}
+
+div#idDivAltaArticulos span#statusAltaArticulo{
+	font-family: monospace;
+	color: hsl(5, 99%, 50%);
+	font-size: small;
+}
+
+h3.decTest { 
+	font-family: monospace;
+	color: hsl(239, 60%, 50%);
+	font-size: 1.25em;
+}
+
+div#idDivArticulos {
+	overflow: scroll;
+	background-color: hsl(224,99%,90%);
+}
+
+div#idDivArticulos  table{
+	line-height: 1.2em;
+}
+
+div#idDivArticulos table caption{
+	color: hsl(60, 99%, 20%);
+	font-size: 1.2em;
+	margin-bottom: 4px; 
+}
+
+div#idDivArticulos th{	 
+	background-color: hsl(224,99%,50%);
+	color: white;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+div#idDivArticulos tr:nth-child(odd){	 
+	background-color: hsl(224,99%,80%);
+	color: hsl(224,99%,20%);
+}
+div#idDivArticulos tr:nth-child(even){	 
+	background-color: hsl(224,99%,60%);
+	color: hsl(220,99%,95%);
+}
+div#idDivArticulos td{	 
+	padding-left: 3px;
+	padding-right: 3px;
+}
+
+
+
+
+
+
+
+
+
+

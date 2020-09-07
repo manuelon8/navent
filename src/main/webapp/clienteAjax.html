@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
+	function sendArticulos(){
+		alert("se va a ingresar un nuevo pedido!!");
+		var formDatos = new URLSearchParams();
+		formDatos.set("idPedido", formArticulo["idPedido"].value);
+		formDatos.set("nombre", formArticulo["nombre"].value);
+		formDatos.set("monto", formArticulo["monto"].value);
+		formDatos.set("descuento", formArticulo["descuento"].value);
+
+		var xhttp= new XMLHttpRequest();
+		xhttp.open('POST', './webapi/pedidos/agregar');	
+		xhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+		xhttp.send(formDatos);
+		xhttp.onreadystatechange=function(){
+			if(xhttp.readyState == 4 && xhttp.status == 200){
+				alert("error al ingresar pedido!!");
+			}
+
+			}
+
+	}	
+	</script>
+<meta charset="ISO-8859-1">
+ <link rel="stylesheet" type="text/css" href="estilos.css" media="screen" />
+<title>Insert title here</title>
+</head>
+<body>
+<div id="idDivAltaArticulos" class="divTest">
+	 
+		<h3 class="decTest">test Post /pedidos/agregar</h3>
+		<form id="idFormArticulo" method="post">
+			<label for="idPedido">idPedido:</label>
+			<input type="text" id="idPedido" name="idPedido" placeholder="id Pedido" size="15" /><br>
+			
+			<label for="nombre">Nombre:</label>
+			<input type="text" id="nombre" name="nombre" placeholder="nombre Pedido" size="30" /><br>
+			
+			<label for="monto">Monto:</label>
+			<input type="text" id="monto" name="monto" placeholder="monto" size="15" /><br>
+			
+			<label for="descuento">Costo:</label>
+			<input type="text" id="descuento" name="descuento" placeholder="descuento" size="15" /><br>
+			
+		<button onclick="sendArticulos()">Dar de Alta</button>
+		<button type="reset" onclick="spanStatusAltaArt.innerHTML=''">Borrar</button><br>
+		</form> 
+ 			 
+	</div>	
+
+ 
+</body>
+</html>
